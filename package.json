@@ -1,0 +1,28 @@
+{
+  "name": "hello-redux",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -vd -t babelify -o static/hello-redux.js app.js",
+    "watch": "watchify -vd -t babelify -o static/hello-redux.js app.js",
+    "start": "node --harmony --harmony_destructuring start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "watchify": "^3.4.0"
+  },
+  "dependencies": {
+    "babel": "^5.8.23",
+    "body-parser": "^1.14.0",
+    "express": "^4.13.3",
+    "isomorphic-fetch": "^2.1.1",
+    "react": "^0.13.3",
+    "react-redux": "^3.0.0",
+    "redux": "^3.0.2"
+  }
+}
