@@ -1,13 +1,12 @@
 "use strict"
 
 var express = require('express')
+var renderApp = require('./render-app.jsx')
 var port = 3000
 
 var app = new express()
 app.use(express.static('static'))
 app.use(require('body-parser').json())
-
-var renderApp = require('./render-app.jsx')
 
 var todos = []
 app.get("/", function (req, res) {

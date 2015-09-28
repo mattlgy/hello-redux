@@ -3,7 +3,6 @@
 require('isomorphic-fetch')
 var React = require('react/addons')
 var connect = require('react-redux').connect
-var classnames = require('classnames')
 var actions = require('../actions')
 
 var TodoTextInput = require('./todo-text-input.jsx')

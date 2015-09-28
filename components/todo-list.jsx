@@ -3,7 +3,7 @@
 var React = require('react')
 
 class TodoList extends React.Component {
-  render() {
+  render () {
     var { todos } = this.props
     return (
       <ul>
